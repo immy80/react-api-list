@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eact-api-list/static/css/main.f58840b0.chunk.css",
+    "main.js": "/eact-api-list/static/js/main.e5d53cc3.chunk.js",
+    "main.js.map": "/eact-api-list/static/js/main.e5d53cc3.chunk.js.map",
+    "runtime-main.js": "/eact-api-list/static/js/runtime-main.6cfc5c7f.js",
+    "runtime-main.js.map": "/eact-api-list/static/js/runtime-main.6cfc5c7f.js.map",
+    "static/js/2.a1d975b1.chunk.js": "/eact-api-list/static/js/2.a1d975b1.chunk.js",
+    "static/js/2.a1d975b1.chunk.js.map": "/eact-api-list/static/js/2.a1d975b1.chunk.js.map",
+    "static/js/3.09a4318b.chunk.js": "/eact-api-list/static/js/3.09a4318b.chunk.js",
+    "static/js/3.09a4318b.chunk.js.map": "/eact-api-list/static/js/3.09a4318b.chunk.js.map",
+    "index.html": "/eact-api-list/index.html",
+    "static/css/main.f58840b0.chunk.css.map": "/eact-api-list/static/css/main.f58840b0.chunk.css.map",
+    "static/js/2.a1d975b1.chunk.js.LICENSE.txt": "/eact-api-list/static/js/2.a1d975b1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cfc5c7f.js",
+    "static/js/2.a1d975b1.chunk.js",
+    "static/css/main.f58840b0.chunk.css",
+    "static/js/main.e5d53cc3.chunk.js"
+  ]
+}
