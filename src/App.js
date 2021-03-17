@@ -30,6 +30,7 @@ background-color: ${({primary}) =>(primary ? 'orange' : 'none')};
 border-radius: 0.5rem;
 width: 40%;
 text-align:center;
+margin-bottom: 50px;
 `
 const Input = styled.input`
 border-radius: .5em;
@@ -69,7 +70,6 @@ function App() {
       ...apiUsers,
       loading: true
     })
-
     const response = await axios.get('https://8ee41f94-d4f4-439d-8233-e573edca74ff.mock.pstmn.io/users');
     setApiUsers({
       loading: false,
@@ -130,15 +130,12 @@ function App() {
   });
 
   const canUserBeAddedToList = (email) => {
-    console.log(typeof email);
     const foundUserInApi = apiUsers.users.find(user => {
       return user.email === email
     })
-
     const foundUserInMyList = list.allUsers.find(user => {
       return user.email === email
     })
-
     if(foundUserInApi && !foundUserInMyList) {
       return true
     } else if(!foundUserInApi) {
@@ -170,8 +167,6 @@ function App() {
     setSortOrder(!sortOrder);
     
   }
-
-
   return (
     <div className="container">
       <div className="title">
@@ -199,7 +194,8 @@ function App() {
             placeholder="Enter user email"
             onChange={setCurrentUser}
             value={list.currentUser.email} 
-          /><br />
+          />
+          <br />
           <Button type="submit">Add user</Button>
         </form>
         
@@ -207,16 +203,17 @@ function App() {
         {error && <h3>{error}</h3>}
         <Heading>My List</Heading>
         {/* <List primary>{allUsers}</List>   */}
+
         <List>{allUsers.length < 1 ? (
-            <li><b>No users in the list</b></li>
+            <List>No users in the list</List>
             ) : allUsers }
-          </List>
+        </List>
             
-            { allUsers.length > 0 &&
-              <Button className="btn" onClick={() => sortUsers(sortOrder)}>
-                Sort users by name
-              </Button>
-            }
+        { allUsers.length > 0 &&
+            <Button className="btn" onClick={() => sortUsers(sortOrder)}>
+              Sort users by name
+            </Button>
+        }
       </Main>
 
       <Main>
